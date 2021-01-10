@@ -20,13 +20,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coreos/etcd/etcdserver/membership"
-	"github.com/coreos/etcd/pkg/mock/mockstorage"
-	"github.com/coreos/etcd/pkg/pbutil"
-	"github.com/coreos/etcd/pkg/types"
-	"github.com/coreos/etcd/raft"
-	"github.com/coreos/etcd/raft/raftpb"
-	"github.com/coreos/etcd/rafthttp"
+	"github.com/meeypioneer/etcd/etcdserver/membership"
+	"github.com/meeypioneer/etcd/pkg/mock/mockstorage"
+	"github.com/meeypioneer/etcd/pkg/pbutil"
+	"github.com/meeypioneer/etcd/pkg/types"
+	"github.com/meeypioneer/etcd/raft"
+	"github.com/meeypioneer/etcd/raft/raftpb"
+	"github.com/meeypioneer/etcd/rafthttp"
 )
 
 func TestGetIDs(t *testing.T) {

@@ -20,8 +20,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/pkg/testutil"
+	"github.com/meeypioneer/etcd/clientv3"
+	"github.com/meeypioneer/etcd/pkg/testutil"
 )
 
 func TestTLSClientCipherSuitesValid(t *testing.T)    { testTLSCipherSuites(t, true) }

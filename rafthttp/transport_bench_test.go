@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coreos/etcd/etcdserver/stats"
-	"github.com/coreos/etcd/pkg/types"
-	"github.com/coreos/etcd/raft"
-	"github.com/coreos/etcd/raft/raftpb"
+	"github.com/meeypioneer/etcd/etcdserver/stats"
+	"github.com/meeypioneer/etcd/pkg/types"
+	"github.com/meeypioneer/etcd/raft"
+	"github.com/meeypioneer/etcd/raft/raftpb"
 )
 
 func BenchmarkSendingMsgApp(b *testing.B) {

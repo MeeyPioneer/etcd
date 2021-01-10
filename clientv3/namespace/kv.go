@@ -17,9 +17,9 @@ package namespace
 import (
 	"context"
 
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes"
-	pb "github.com/coreos/etcd/etcdserver/etcdserverpb"
+	"github.com/meeypioneer/etcd/clientv3"
+	"github.com/meeypioneer/etcd/etcdserver/api/v3rpc/rpctypes"
+	pb "github.com/meeypioneer/etcd/etcdserver/etcdserverpb"
 )
 
 type kvPrefix struct {

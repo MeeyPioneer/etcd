@@ -20,8 +20,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/functional/rpcpb"
+	"github.com/meeypioneer/etcd/clientv3"
+	"github.com/meeypioneer/etcd/functional/rpcpb"
 
 	"go.uber.org/zap"
 )

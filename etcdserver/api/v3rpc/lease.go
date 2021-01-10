@@ -18,10 +18,10 @@ import (
 	"context"
 	"io"
 
-	"github.com/coreos/etcd/etcdserver"
-	"github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes"
-	pb "github.com/coreos/etcd/etcdserver/etcdserverpb"
-	"github.com/coreos/etcd/lease"
+	"github.com/meeypioneer/etcd/etcdserver"
+	"github.com/meeypioneer/etcd/etcdserver/api/v3rpc/rpctypes"
+	pb "github.com/meeypioneer/etcd/etcdserver/etcdserverpb"
+	"github.com/meeypioneer/etcd/lease"
 )
 
 type LeaseServer struct {

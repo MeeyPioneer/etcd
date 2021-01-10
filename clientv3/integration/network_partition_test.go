@@ -22,10 +22,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes"
-	"github.com/coreos/etcd/integration"
-	"github.com/coreos/etcd/pkg/testutil"
+	"github.com/meeypioneer/etcd/clientv3"
+	"github.com/meeypioneer/etcd/etcdserver/api/v3rpc/rpctypes"
+	"github.com/meeypioneer/etcd/integration"
+	"github.com/meeypioneer/etcd/pkg/testutil"
 )
 
 var errExpected = errors.New("expected error")

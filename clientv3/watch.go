@@ -20,9 +20,9 @@ import (
 	"sync"
 	"time"
 
-	v3rpc "github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes"
-	pb "github.com/coreos/etcd/etcdserver/etcdserverpb"
-	mvccpb "github.com/coreos/etcd/mvcc/mvccpb"
+	v3rpc "github.com/meeypioneer/etcd/etcdserver/api/v3rpc/rpctypes"
+	pb "github.com/meeypioneer/etcd/etcdserver/etcdserverpb"
+	mvccpb "github.com/meeypioneer/etcd/mvcc/mvccpb"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"

@@ -22,11 +22,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/coreos/etcd/etcdserver/stats"
-	"github.com/coreos/etcd/pkg/pbutil"
-	"github.com/coreos/etcd/pkg/types"
-	"github.com/coreos/etcd/raft"
-	"github.com/coreos/etcd/raft/raftpb"
+	"github.com/meeypioneer/etcd/etcdserver/stats"
+	"github.com/meeypioneer/etcd/pkg/pbutil"
+	"github.com/meeypioneer/etcd/pkg/types"
+	"github.com/meeypioneer/etcd/raft"
+	"github.com/meeypioneer/etcd/raft/raftpb"
 )
 
 const (
@@ -64,13 +64,21 @@ func (p *pipeline) start() {
 	for i := 0; i < connPerPipeline; i++ {
 		go p.handle()
 	}
-	plog.Infof("started HTTP pipelining with peer %s", p.peerID)
+	if logger != nil {
+		logger.Info().Msgf("started HTTP pipelining with peer %s", p.peerID)
+	} else {
+		plog.Infof("started HTTP pipelining with peer %s", p.peerID)
+	}
 }
 
 func (p *pipeline) stop() {
 	close(p.stopc)
 	p.wg.Wait()
-	plog.Infof("stopped HTTP pipelining with peer %s", p.peerID)
+	if logger != nil {
+		logger.Info().Msgf("stopped HTTP pipelining with peer %s", p.peerID)
+	} else {
+		plog.Infof("stopped HTTP pipelining with peer %s", p.peerID)
+	}
 }
 
 func (p *pipeline) handle() {

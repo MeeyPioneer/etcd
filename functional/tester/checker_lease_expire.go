@@ -19,9 +19,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/etcdserver/api/v3rpc/rpctypes"
-	"github.com/coreos/etcd/functional/rpcpb"
+	"github.com/meeypioneer/etcd/clientv3"
+	"github.com/meeypioneer/etcd/etcdserver/api/v3rpc/rpctypes"
+	"github.com/meeypioneer/etcd/functional/rpcpb"
 
 	"go.uber.org/zap"
 	"google.golang.org/grpc"

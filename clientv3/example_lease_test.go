@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/coreos/etcd/clientv3"
+	"github.com/meeypioneer/etcd/clientv3"
 )
 
 func ExampleLease_grant() {

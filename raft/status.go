@@ -17,7 +17,7 @@ package raft
 import (
 	"fmt"
 
-	pb "github.com/coreos/etcd/raft/raftpb"
+	pb "github.com/meeypioneer/etcd/raft/raftpb"
 )
 
 type Status struct {

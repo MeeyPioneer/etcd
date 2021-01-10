@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"sync"
 
-	v3 "github.com/coreos/etcd/clientv3"
-	pb "github.com/coreos/etcd/etcdserver/etcdserverpb"
+	v3 "github.com/meeypioneer/etcd/clientv3"
+	pb "github.com/meeypioneer/etcd/etcdserver/etcdserverpb"
 )
 
 // Mutex implements the sync Locker interface with etcd

@@ -18,8 +18,8 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/coreos/etcd/lease"
-	"github.com/coreos/etcd/mvcc/backend"
+	"github.com/meeypioneer/etcd/lease"
+	"github.com/meeypioneer/etcd/mvcc/backend"
 )
 
 type fakeConsistentIndex uint64

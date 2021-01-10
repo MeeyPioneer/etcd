@@ -18,9 +18,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/coreos/etcd/clientv3"
-	"github.com/coreos/etcd/clientv3/concurrency"
-	epb "github.com/coreos/etcd/etcdserver/api/v3election/v3electionpb"
+	"github.com/meeypioneer/etcd/clientv3"
+	"github.com/meeypioneer/etcd/clientv3/concurrency"
+	epb "github.com/meeypioneer/etcd/etcdserver/api/v3election/v3electionpb"
 )
 
 // ErrMissingLeaderKey is returned when election API request
